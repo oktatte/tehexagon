@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <title>Hexagon</title>
+</head>
+
+<body>
+
+  <nav class="nav justify-content-center">
+    <a class="nav-link" href="index.html">Főoldal</a>
+    <a class="nav-link" href="calc.html">Hexagon</a>
+    <a class="nav-link" href="about.html">Névjegy</a>
+  </nav>
+
+  <div class="container">
+    <h1>Hexagon</h1>
+
+    <form id="hexagonForm">
+
+
+      <div class="form-check">
+        <input type="radio" name="selectMode" class="form-check-input"
+        id="sideLength" checked value="side">
+        <label for="sideLength" class="form-check-label">Oldal</label>
+      </div>
+      <div class="form-check">
+        <input type="radio" name="selectMode" class="form-check-input" 
+        id="circumscribedLength" value="circum">
+        <label for="circumscribedLength" class="form-check-label">
+          Körülírt kör sugara alapján</label>
+      </div>
+      <div class="form-check">
+        <input type="radio" name="selectMode" class="form-check-input" 
+        id="inscribedLength" value="in">
+        <label for="inscribedLength" class="form-check-label">
+          Beírt kör sugara alapján</label>
+      </div>
+      <div class="form-check">
+        <input type="radio" name="selectMode" class="form-check-input" 
+        id="diagonalLength" value="diagonal">
+        <label for="diagonalLength" class="form-check-label">
+          Átló hossza alapján</label>
+      </div>
+
+      <div class="mb-3">
+        <label for="hexagonData" class="form-label">Adat</label>
+        <input type="text" class="form-control" 
+        id="hexagonData">
+      </div>
+
+      <button type="submit" class="btn btn-primary mb-3">Számít</button>
+
+      <div class="mb-3">
+        <label for="hexagonArea" class="form-label">Terület</label>
+        <input type="text" class="form-control" id="hexagonArea">
+      </div>
+
+
+    </form>
+  </div>
+
+  <script type="module" src="src/calc.js"></script>
+</body>
+
+</html>
